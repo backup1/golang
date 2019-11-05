@@ -46,12 +46,15 @@ This post introduced these workflows using Go modules:
 * `go get` changes the required version of a dependency \(or adds a new dependency\).
 * `go mod tidy` removes unused dependencies.
 
-```text
+```bash
 $ go mod init example.com/hello
 $ go list -m all
 $ go list -m -versions rsc.io/sampler
 $ go get rsc.io/sampler@v1.3.1
 $ go list -m rsc.io/q...
 $ go mod tidy
+$ go mod why -m rsc.io/binaryregexp
+$ sudo go build ./...
+$ sudo go test ./...
 ```
 
