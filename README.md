@@ -58,3 +58,28 @@ $ sudo go build ./...
 $ sudo go test ./...
 ```
 
+```go
+$ export GO111MODULE=on
+$ go mod init
+$ go mod vendor # if you have vendor/ folder, will automatically integrate
+$ go build
+```
+
+testing local changes with go.mod
+
+```go
+module github.com/acme/foo
+
+go 1.12
+
+require (
+	github.com/acme/bar v1.0.0
+)
+
+replace github.com/acme/bar => /path/to/local/bar
+```
+
+```bash
+$ go mod edit -replace github.com/acme/bar=/path/to/local/bar
+```
+
