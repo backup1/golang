@@ -34,5 +34,24 @@ export GOPATH=$HOME/golang
 export TMPDIR=$HOME/tmp
 ```
 
-gopkg [https://golang.github.io/dep](https://golang.github.io/dep)
+\[deprecated\] gopkg [https://golang.github.io/dep](https://golang.github.io/dep)
+
+go.mod \[since 1.11\] [https://blog.golang.org/using-go-modules](https://blog.golang.org/using-go-modules)
+
+This post introduced these workflows using Go modules:
+
+* `go mod init` creates a new module, initializing the `go.mod` file that describes it.
+* `go build`, `go test`, and other package-building commands add new dependencies to `go.mod` as needed.
+* `go list -m all` prints the current module’s dependencies.
+* `go get` changes the required version of a dependency \(or adds a new dependency\).
+* `go mod tidy` removes unused dependencies.
+
+```text
+$ go mod init example.com/hello
+$ go list -m all
+$ go list -m -versions rsc.io/sampler
+$ go get rsc.io/sampler@v1.3.1
+$ go list -m rsc.io/q...
+$ go mod tidy
+```
 
