@@ -29,6 +29,7 @@ Config specific for golang \(especially when you are not the root\)
 ```bash
 $ cat ~/.zshenv.user 
 ... ...
+export PATH=$PATH:$HOME/local/go/bin # optional
 export GOPATH=$HOME/golang
 export TMPDIR=$HOME/tmp
 ```
