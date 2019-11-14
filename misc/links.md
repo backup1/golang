@@ -1,5 +1,9 @@
 # Links
 
+Running very long process, three ways to keep outputing continously \(using goroutine\)
+
+[https://blog.kowalczyk.info/article/wOYk/advanced-command-execution-in-go-with-osexec.html](https://blog.kowalczyk.info/article/wOYk/advanced-command-execution-in-go-with-osexec.html)
+
 Data Structure:
 
 [https://gist.github.com/cslarsen/5256744](https://gist.github.com/cslarsen/5256744)
