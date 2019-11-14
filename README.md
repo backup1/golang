@@ -56,7 +56,11 @@ $ go mod tidy
 $ go mod why -m rsc.io/binaryregexp
 $ sudo go build ./...
 $ sudo go test ./...
+$ git tag v1.2.0
+$ git push origin v1.2.0
 ```
+
+Publish a module
 
 ```go
 $ export GO111MODULE=on
@@ -65,7 +69,19 @@ $ go mod vendor # if you have vendor/ folder, will automatically integrate
 $ go build
 ```
 
+```bash
+$ go mod tidy
+$ go test ./...
+ok      example.com/hello       0.015s
+$ git add go.mod go.sum hello.go hello_test.go
+$ git commit -m "hello: changes for v0.1.0"
+$ git tag v0.1.0
+$ git push origin v0.1.0
+```
+
 testing local changes with go.mod
+
+Git init
 
 ```go
 module github.com/acme/foo
@@ -77,6 +93,12 @@ require (
 )
 
 replace github.com/acme/bar => /path/to/local/bar
+```
+
+```bash
+$ git config -l
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
 ```
 
 ```bash
