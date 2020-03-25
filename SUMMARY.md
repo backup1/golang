@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Closure](closure.md)
 
 ## Golang Container
 
