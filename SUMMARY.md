@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Closure](closure.md)
+* [Panic, Recover and Defer](panic-recover-and-defer.md)
 
 ## Golang Container
 
