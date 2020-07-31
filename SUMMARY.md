@@ -3,6 +3,12 @@
 * [Introduction](README.md)
 * [Closure](closure.md)
 * [Panic, Recover and Defer](panic-recover-and-defer.md)
+* [Build / Compilation](build-compilation.md)
+
+## Parallelism
+
+* [WaitGroup](parallelism/waitgroup.md)
+* [Channel](parallelism/channel.md)
 
 ## Golang Container
 
