@@ -4,6 +4,7 @@
 * [Closure](closure.md)
 * [Panic, Recover and Defer](panic-recover-and-defer.md)
 * [Build / Compilation](build-compilation.md)
+* [Open project](open-project.md)
 
 ## Parallelism
 
